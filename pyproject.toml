@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yac-cannabinoid-adhd"
+version = "1.0.0"
+description = "Rational Design of Pathway-Selective Cannabinoid Compounds for ADHD"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Matthew Long", email = "matthew@yonedaai.com"},
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+keywords = [
+    "cannabinoid",
+    "CB1",
+    "ADHD",
+    "drug-design",
+    "biased-signaling",
+    "prodrug",
+    "cheminformatics",
+    "rdkit"
+]
+dependencies = [
+    "rdkit>=2023.9.1",
+    "numpy>=1.24.0",
+    "pillow>=10.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/mlong/yac-cannabinoid-adhd"
+Documentation = "https://mlong.github.io/yac-cannabinoid-adhd"
+Repository = "https://github.com/mlong/yac-cannabinoid-adhd.git"
+
+[project.scripts]
+yac-compounds = "src.compounds:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W"]
+ignore = ["E501"]

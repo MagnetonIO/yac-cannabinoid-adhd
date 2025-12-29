@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAC Cannabinoid Compounds for ADHD</title>
+    <style>
+        :root {
+            --primary: #2d5016;
+            --secondary: #4a7c23;
+            --accent: #7cb342;
+            --bg: #fafafa;
+            --text: #333;
+            --card-bg: #fff;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 3rem;
+        }
+        .section h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .strategy-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--accent);
+        }
+        .strategy-card h3 {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        .compound-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .compound-table th,
+        .compound-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        .compound-table th {
+            background: var(--primary);
+            color: white;
+        }
+        .compound-table tr:hover {
+            background: #f5f5f5;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        .badge-a { background: #e3f2fd; color: #1565c0; }
+        .badge-b { background: #f3e5f5; color: #7b1fa2; }
+        .badge-c { background: #fff3e0; color: #ef6c00; }
+        .code-block {
+            background: #263238;
+            color: #aed581;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-right: 1rem;
+            margin-top: 1rem;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: var(--primary);
+        }
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        footer a {
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YAC Cannabinoid Compound Library</h1>
+        <p>Rational Design of Pathway-Selective Cannabinoid Compounds for ADHD: Dissociating Therapeutic Efficacy from Orexigenic Effects</p>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Overview</h2>
+            <p>This research presents a comprehensive rational drug design framework for creating THC analogs that preserve ADHD-relevant prefrontal cortex modulation while eliminating appetite stimulation through three mechanistically distinct strategies.</p>
+
+            <a href="https://github.com/mlong/yac-cannabinoid-adhd" class="btn">View on GitHub</a>
+            <a href="paper/pathway-selective-cannabinoids-adhd.pdf" class="btn">Read Paper (PDF)</a>
+        </section>
+
+        <section class="section">
+            <h2>Three Strategies</h2>
+            <div class="strategy-grid">
+                <div class="strategy-card">
+                    <h3>Strategy A: Biased Signaling</h3>
+                    <p>Gi-selective partial agonists and allosteric-orthosteric hybrids that preferentially activate therapeutic pathways through defined structural modifications.</p>
+                    <p><strong>Compounds:</strong> YAC-101, YAC-102</p>
+                </div>
+                <div class="strategy-card">
+                    <h3>Strategy B: Prodrug Activation</h3>
+                    <p>CYP2D6- and esterase-activated prodrugs achieving cortex-selective activation while maintaining blood-brain barrier penetration.</p>
+                    <p><strong>Compounds:</strong> YAC-201, YAC-202</p>
+                </div>
+                <div class="strategy-card">
+                    <h3>Strategy C: Multi-Target Ligands</h3>
+                    <p>Hybrid molecules engaging CB1 while antagonizing appetite-related receptors (GHSR1a, NPY Y1) or agonizing anorexigenic receptors (MC4R).</p>
+                    <p><strong>Compounds:</strong> YAC-301, YAC-302</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Compound Library</h2>
+            <table class="compound-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Strategy</th>
+                        <th>MW (g/mol)</th>
+                        <th>logP</th>
+                        <th>Key Feature</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>YAC-101</strong></td>
+                        <td><span class="badge badge-a">Strategy A</span></td>
+                        <td>434.5</td>
+                        <td>5.8</td>
+                        <td>Gi-biased partial agonist</td>
+                    </tr>
+                    <tr>
+                        <td><strong>YAC-102</strong></td>
+                        <td><span class="badge badge-a">Strategy A</span></td>
+                        <td>586.7</td>
+                        <td>5.2</td>
+                        <td>Allosteric-orthosteric hybrid</td>
+                    </tr>
+                    <tr>
+                        <td><strong>YAC-201</strong></td>
+                        <td><span class="badge badge-b">Strategy B</span></td>
+                        <td>448.6</td>
+                        <td>6.2</td>
+                        <td>CYP2D6 prodrug</td>
+                    </tr>
+                    <tr>
+                        <td><strong>YAC-202</strong></td>
+                        <td><span class="badge badge-b">Strategy B</span></td>
+                        <td>400.6</td>
+                        <td>6.5</td>
+                        <td>Esterase prodrug</td>
+                    </tr>
+                    <tr>
+                        <td><strong>YAC-301</strong></td>
+                        <td><span class="badge badge-c">Strategy C</span></td>
+                        <td>~1150</td>
+                        <td>~3.5</td>
+                        <td>CB1/GHSR1a dual ligand</td>
+                    </tr>
+                    <tr>
+                        <td><strong>YAC-302</strong></td>
+                        <td><span class="badge badge-c">Strategy C</span></td>
+                        <td>~1050</td>
+                        <td>~2.8</td>
+                        <td>CB1/MC4R dual agonist</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>Quick Start</h2>
+            <div class="code-block">
+<pre>
+# Clone and install
+git clone https://github.com/mlong/yac-cannabinoid-adhd.git
+cd yac-cannabinoid-adhd
+pip install -r requirements.txt
+
+# Analyze compounds
+python src/compounds.py
+
+# Generate molecular visualizations
+python src/visualize.py
+</pre>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Python API</h2>
+            <div class="code-block">
+<pre>
+from src.compounds import YACCompoundLibrary, MolecularAnalyzer
+
+library = YACCompoundLibrary()
+compound = library.get_compound("YAC-201")
+
+analyzer = MolecularAnalyzer()
+props = analyzer.analyze_compound(compound.smiles)
+print(f"TPSA: {props['tpsa']} A^2")
+</pre>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Matthew Long / YonedaAI Research Collective</p>
+        <p>
+            <a href="https://github.com/mlong/yac-cannabinoid-adhd">GitHub</a> |
+            <a href="paper/pathway-selective-cannabinoids-adhd.pdf">Research Paper</a>
+        </p>
+    </footer>
+</body>
+</html>
