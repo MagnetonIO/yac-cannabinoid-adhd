@@ -20,6 +20,19 @@ from .types import (
     MultiTargetProfile,
     CompoundSpecification,
 )
+from .lab_integration import (
+    ValidationStatus,
+    SynthesisStatus,
+    AssayType,
+    LabProvider,
+    ValidationResult,
+    ValidationPipeline,
+    SynthesisOrder,
+    AssayRequest,
+    LabIntegrationAPI,
+    DrugDiscoveryPipeline,
+    create_demo_pipeline,
+)
 
 __version__ = "1.0.0"
 __all__ = [
@@ -47,4 +60,16 @@ __all__ = [
     "ProdrugDesign",
     "MultiTargetProfile",
     "CompoundSpecification",
+    # Lab integration
+    "ValidationStatus",
+    "SynthesisStatus",
+    "AssayType",
+    "LabProvider",
+    "ValidationResult",
+    "ValidationPipeline",
+    "SynthesisOrder",
+    "AssayRequest",
+    "LabIntegrationAPI",
+    "DrugDiscoveryPipeline",
+    "create_demo_pipeline",
 ]

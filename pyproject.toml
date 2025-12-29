@@ -39,10 +39,23 @@ dependencies = [
     "pillow>=10.0.0",
 ]
 
+[project.optional-dependencies]
+lab = [
+    "httpx>=0.25.0",
+    "pydantic>=2.0.0",
+    "celery>=5.3.0",
+]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "mypy>=1.7.0",
+    "ruff>=0.1.0",
+]
+
 [project.urls]
-Homepage = "https://github.com/mlong/yac-cannabinoid-adhd"
-Documentation = "https://mlong.github.io/yac-cannabinoid-adhd"
-Repository = "https://github.com/mlong/yac-cannabinoid-adhd.git"
+Homepage = "https://github.com/MagnetonIO/yac-cannabinoid-adhd"
+Documentation = "https://magnetonio.github.io/yac-cannabinoid-adhd"
+Repository = "https://github.com/MagnetonIO/yac-cannabinoid-adhd.git"
 
 [project.scripts]
 yac-compounds = "src.compounds:main"

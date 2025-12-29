@@ -33,7 +33,7 @@ This repository contains the computational chemistry implementation and research
 
 ```bash
 # Clone the repository
-git clone https://github.com/mlong/yac-cannabinoid-adhd.git
+git clone https://github.com/MagnetonIO/yac-cannabinoid-adhd.git
 cd yac-cannabinoid-adhd
 
 # Install dependencies
